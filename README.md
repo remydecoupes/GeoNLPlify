@@ -33,7 +33,10 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
   ```bash 
   python -m spacy download en_core_web_trf
   ```
-
+5. Donwload [world-cities from simple maps](https://simplemaps.com/data/world-cities)
+    ```bash
+    wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
+    ```
 ### Conda environment
 1. Git clone this repository
   ```bash
@@ -47,6 +50,16 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
   ```bash 
   python -m spacy download en_core_web_trf
   ```
-
+4. Donwload [world-cities from simple maps](https://simplemaps.com/data/world-cities)
+    ```bash
+    wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
+    ```
 ### Pip install
 :construction: **Packaging in progress** :construction:
+
+## Acknowledgement
+:pray: This library use those terrific tools/libraries/data :muscle::
++ [Spacy](https://spacy.io/)
++ [The Komoot geocoder Photon](photon.komoot.io/)
++ [OpenStreeMap](openstreetmap.org/copyright)
++ [Simplemaps data](https://simplemaps.com/data/world-cities)
