@@ -1,5 +1,5 @@
 <h1 align="center"> GeoNLPlify</h1>
-<div style="text-align:center"> :earth_africa: :book: </div>
+<p align="center"> style="text-align:center"> :earth_africa: :book: </p>
 
 A NLP library for data augmentation focusing on spatial information contained in text.
 
