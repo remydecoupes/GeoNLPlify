@@ -61,6 +61,6 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 ## Acknowledgement
 :pray: This library use those terrific tools/libraries/data :muscle::
 + [Spacy](https://spacy.io/)
-+ [The Komoot geocoder Photon](photon.komoot.io/)
-+ [OpenStreeMap](openstreetmap.org/copyright)
++ [The Komoot geocoder Photon](https://photon.komoot.io/)
++ [OpenStreeMap](https://www.openstreetmap.org/copyright)
 + [Simplemaps data](https://simplemaps.com/data/world-cities)
