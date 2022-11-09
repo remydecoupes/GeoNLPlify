@@ -1,0 +1,11 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+bin/
+lib
+pyvenv.cfg
+
+# IDE
+.idea
