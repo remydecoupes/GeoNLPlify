@@ -51,7 +51,8 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 2. Create a conda with all the required dependencies
   ```bash
   cd GeoNLPlify
-  conda env create -n geonlplify_conda --file conda_environment.yml
+  conda env create -n geonlplify_conda --file conda_environment.yml python==3.10.6
+  conda activate geonlplify_conda
   ```
 3. Install spacy models
   ```bash 
