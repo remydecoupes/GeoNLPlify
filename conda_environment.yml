@@ -77,19 +77,4 @@ dependencies:
   - wasabi=0.10.0=pyhd8ed1ab_0
   - wheel=0.38.2=pyhd8ed1ab_0
   - xz=5.2.6=h166bdaf_0
-  - pip:
-    - en-core-web-trf==3.4.1
-    - filelock==3.8.0
-    - huggingface-hub==0.10.1
-    - nvidia-cublas-cu11==11.10.3.66
-    - nvidia-cuda-nvrtc-cu11==11.7.99
-    - nvidia-cuda-runtime-cu11==11.7.99
-    - nvidia-cudnn-cu11==8.5.0.96
-    - pyyaml==6.0
-    - regex==2022.10.31
-    - spacy-alignments==0.8.6
-    - spacy-transformers==1.1.8
-    - tokenizers==0.12.1
-    - torch==1.13.0
-    - transformers==4.21.3
 prefix: /home/rdecoupe/mambaforge/envs/geonlplify

@@ -35,14 +35,14 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
   ```
 3. Install dependencies
   ```bash
-  cd geonlplify
+  cd GeoNLPlify
   pip install -r virtual_env_requirements.txt
   ```
 
 5. Donwload [world-cities from simple maps](https://simplemaps.com/data/world-cities)
-    ```bash
-    wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
-    ```
+  ```bash
+  wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
+  ```
 ### Conda environment
 1. Git clone this repository
   ```bash
@@ -50,6 +50,7 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
   ```
 2. Create a conda with all the required dependencies
   ```bash
+  cd GeoNLPlify
   conda env create -n geonlplify_conda --file conda_environment.yml
   ```
 3. Install spacy models
@@ -57,9 +58,9 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
   python -m spacy download en_core_web_trf
   ```
 4. Donwload [world-cities from simple maps](https://simplemaps.com/data/world-cities)
-    ```bash
-    wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
-    ```
+  ```bash
+  wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
+  ```
 ### Pip install
 :construction: **Packaging in progress** :construction:
 
