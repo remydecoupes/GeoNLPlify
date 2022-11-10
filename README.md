@@ -25,20 +25,20 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 ### Virtual Environment
 1. Git clone this repository
   ```bash
-  
+  git clone https://github.com/remydecoupes/GeoNLPlify.git
   ```
 2. Create a virtual env
   ```bash
   python -m venv geonlplify_venv
+  source geonlplify_venv/bin/activate
+  pip install --upgrade pip
   ```
 3. Install dependencies
   ```bash
+  cd geonlplify
   pip install -r virtual_env_requirements.txt
   ```
-4. Install spacy models
-  ```bash 
-  python -m spacy download en_core_web_trf
-  ```
+
 5. Donwload [world-cities from simple maps](https://simplemaps.com/data/world-cities)
     ```bash
     wget -qO- https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip  | bsdtar -xvf- -C ./geonlplify/simplemaps/
@@ -46,7 +46,7 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 ### Conda environment
 1. Git clone this repository
   ```bash
-  
+  git clone https://github.com/remydecoupes/GeoNLPlify.git
   ```
 2. Create a conda with all the required dependencies
   ```bash
