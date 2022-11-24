@@ -10,13 +10,9 @@ Welcome to GeoNLPlify's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   ./installation.rst
+
 A NLP library for data augmentation focusing on spatial information contained in text.
 
 .. image:: ./../readme_ressources/geonlplify_example_schema.png
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
