@@ -11,6 +11,7 @@ Welcome to GeoNLPlify's documentation!
    :caption: Contents:
 
    ./installation.rst
+   ./api
 
 A NLP library for data augmentation focusing on spatial information contained in text.
 
