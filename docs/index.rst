@@ -6,14 +6,25 @@
 Welcome to GeoNLPlify's documentation!
 ======================================
 
+.. image:: ./../readme_ressources/geonlplify_example_schema.png
+
+A NLP library for data augmentation focusing on spatial information contained in text.
+
+Usage:
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines:  4
+
+   >>> import geonlplify
+   >>> my_text = "My name is Clara and I live in Berkeley."
+   >>> geonlplify.geonlplify(my_text)
+   'My name is Clara and I live in Bristol'
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    ./installation.rst
    ./api
-
-A NLP library for data augmentation focusing on spatial information contained in text.
-
-.. image:: ./../readme_ressources/geonlplify_example_schema.png
-
+   ./acknowledgements

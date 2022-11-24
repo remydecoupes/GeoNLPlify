@@ -107,6 +107,7 @@ def geocode(sne_name):
 def find_sne(text):
     """
     Return list of SNE
+
     :param text: input text
     :return: list of SNE
     """

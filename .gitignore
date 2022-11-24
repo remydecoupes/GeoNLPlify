@@ -9,3 +9,6 @@ pyvenv.cfg
 
 # IDE
 .idea
+
+# sphinx
+docs/_*
