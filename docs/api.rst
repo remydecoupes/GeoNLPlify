@@ -1,5 +1,5 @@
 API
 ===
 
-.. automodule:: ./../geonlplify/geonlplify
+.. automodule:: geonlplify.geonlplify
     :members:
