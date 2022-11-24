@@ -14,12 +14,6 @@ A NLP library for data augmentation focusing on spatial information contained in
 
 .. image:: ./../readme_ressources/geonlplify_example_schema.png
 
-
-<p align="center">
-  <img src="./readme_ressources/geonlplify_example_schema.png" />
-</p>
-
-
 Indices and tables
 ==================
 

@@ -2,6 +2,8 @@
 :earth_africa: :book:
 </h1>
 
+[![Documentation Status](https://readthedocs.org/projects/geonlplify/badge/?version=latest)](https://geonlplify.readthedocs.io/en/latest/?badge=latest)
+
 A NLP library for data augmentation focusing on spatial information contained in text.
 
 <p align="center">
