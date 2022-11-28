@@ -24,4 +24,10 @@ Uninstall the python package
 
     rm -r [your_site_package]/geonlplify/simplempas
 
+Push package to pypi
+~~~~~~~~~~~~~~~~~~~~
 
+.. code:: bash
+
+    python3 -m build
+    python3 -m twine upload dist/*

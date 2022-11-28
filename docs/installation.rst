@@ -3,8 +3,18 @@ Installation
 
 You can install GeoNLPlify in three ways:
 
+- using pip
 - in a `virtual environment (venv) <#virtual-environment>`__
 - in a `conda environment <#conda-environment>`__ or
+
+Pip install
+~~~~~~~~~~~
+
+.. code:: bash
+
+    pip install GeoNLPlify
+    python3 -c "from geonlplify import download_simplemaps_data; download_simplemaps_data()" # download simplemaps data
+    python -m spacy download en_core_web_trf # download spacy model
 
 
 Virtual Environment
