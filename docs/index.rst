@@ -25,6 +25,7 @@ Usage:
    :maxdepth: 2
    :caption: Contents:
 
+   ./index.rst
    ./installation.rst
    ./contributions.rst
    ./api
