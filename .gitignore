@@ -6,6 +6,8 @@ __pycache__/
 bin/
 lib
 pyvenv.cfg
+dist/
+GeoNLPlify.egg-info/
 
 # IDE
 .idea

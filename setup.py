@@ -9,7 +9,7 @@ setuptools.setup(
     description="GeoNLPlify aims to make variations of an input sentence working on spatial information contained in words",
     long_description=open('README.md').read(),
     packages=setuptools.find_packages(),
-    install_requires=["pandas", "spacy", "requests" ],
+    install_requires=["pandas", "spacy", "requests"],
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',

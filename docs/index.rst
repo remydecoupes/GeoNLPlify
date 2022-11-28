@@ -26,5 +26,6 @@ Usage:
    :caption: Contents:
 
    ./installation.rst
+   ./contributions.rst
    ./api
    ./acknowledgements

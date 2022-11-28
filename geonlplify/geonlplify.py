@@ -5,10 +5,14 @@ import numpy as np
 from random import randrange # select random cities
 import pkg_resources
 
+global importing_error
+importing_error = []
+
 try:
     nlp_en = spacy.load("en_core_web_trf") # speed up things. No need to load spacy several times
 except:
-    print("Did you load spacy model? if not copy/paste 'python -m spacy download en_core_web_trf' in your terminal ")
+    error = "Error: no spacy model found!: download the spacy en_core_web_trf: 'python -m spacy download en_core_web_trf'"
+    importing_error.append(error)
 global world_cities_df # global var to speed run time
 
 def load_simplemaps():
@@ -17,11 +21,23 @@ def load_simplemaps():
     CC-BY 4.0 attribution from https://simplemaps.com/data/world-cities
     :return:
     """
-    stream = pkg_resources.resource_stream(__name__, "/simplemaps/worldcities.csv")
-    return pd.read_csv(stream)
+    try:
+        stream = pkg_resources.resource_stream(__name__, "/simplemaps/worldcities.csv")
+        print("loading data from https://simplemaps.com/data/world-cities")
+        return pd.read_csv(stream)
+    except:
+        error = "No data found!: download world-cities from simplemaps: python3 -c \"from geonlplify import download_simplemaps_data; download_simplemaps_data()\""
+        importing_error.append(error)
+
+def importing_error_check():
+    """
+    Check if there is any importing issue (like missing data or spacy model)
+    :return:
+    """
+    if len(importing_error) != 0:
+        raise ImportError
 
 world_cities_df = load_simplemaps()
-
 
 def geonlplify(text, method="spatial_synonym"):
     """
@@ -35,6 +51,13 @@ def geonlplify(text, method="spatial_synonym"):
     :param method: Between those 3 methods [generalization, specialization, spatial_synonym]
     :return: the variation of the input text
     """
+
+    try:
+        importing_error_check()
+    except:
+        print(*importing_error, sep="\n")
+        exit()
+
     list_sne = find_sne(text)
     list_geonlplify_variant = spatial_varations(list_sne, method)
     return replace_variants(text, list_geonlplify_variant, method)
@@ -177,3 +200,19 @@ def spatial_varations(list_of_sne, method="generalization"):
             raise Exception("The method is unknown")
         list_of_variants_sne.append(sne)
         return list_of_variants_sne
+
+def download_simplemaps_data():
+    import requests, zipfile
+    from io import BytesIO
+
+    print("GeoNLPlify uses simplemaps data: https://simplemaps.com/data/world-cities.\n Please be respectfull with their license (CC-BY)")
+    url = "https://simplemaps.com/static/data/world-cities/basic/simplemaps_worldcities_basicv1.75.zip"
+    filename = url.split('/')[-1]
+    req = requests.get(url)
+    zipfile = zipfile.ZipFile(BytesIO(req.content))
+    import geonlplify
+    dir = geonlplify.__path__
+    zipfile.extractall(dir[0] + "/simplemaps/")
+
+
+
