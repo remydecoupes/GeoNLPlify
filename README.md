@@ -81,7 +81,7 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 + [OpenStreeMap](https://www.openstreetmap.org/copyright)
 + [Simplemaps data](https://simplemaps.com/data/world-cities)
 
-## Scientific publication
+## Scientific publication
 | Conference   |      paper      |  description |
 |----------|:-------------:|------:|
 | [EGC'2023](https://egc2023.sciencesconf.org/) |  https://editions-rnti.fr/?inprocid=1002848 | short paper (in French) |
