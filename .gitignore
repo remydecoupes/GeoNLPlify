@@ -8,6 +8,7 @@ lib
 pyvenv.cfg
 dist/
 GeoNLPlify.egg-info/
+geonlplify.egg-info/
 
 # IDE
 .idea
