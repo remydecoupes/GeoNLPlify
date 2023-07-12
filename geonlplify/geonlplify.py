@@ -81,18 +81,10 @@ def replace_variants(text, list_of_variant, method, conserve_n_gram=True):
                     if conserve_n_gram:
                         if sne["name"].count(' ') == str(sne[method]).count(' '):
                             text = text.replace(sne["name"], str(sne[method]))
-                        else:
-                            text = np.nan
                     else:
                         text = text.replace(sne["name"], str(sne[method]))
-                else:
-                    text = np.nan
             except:
-                # print("Couldn't replace text with SNE: " + str(sne) + "and text: " + text)
-                text = np.nan
-                return text
-    else:  # empty list
-        text = np.nan
+                pass
     return text
 
 
@@ -199,7 +191,7 @@ def spatial_varations(list_of_sne, method="generalization"):
             print("The method is unknown")
             raise Exception("The method is unknown")
         list_of_variants_sne.append(sne)
-        return list_of_variants_sne
+    return list_of_variants_sne
 
 def download_simplemaps_data():
     import requests, zipfile

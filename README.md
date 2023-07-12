@@ -3,6 +3,8 @@
 </h1>
 
 [![Documentation Status](https://readthedocs.org/projects/geonlplify/badge/?version=latest)](https://geonlplify.readthedocs.io/en/latest/?badge=latest)
+![GitHub](https://img.shields.io/github/license/remydecoupes/GeoNLPlify)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/remydecoupes/GeoNLPlify)
 
 A NLP library for data augmentation focusing on spatial information contained in text.
 
