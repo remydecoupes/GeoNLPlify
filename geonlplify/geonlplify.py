@@ -56,7 +56,7 @@ def geonlplify(text, method="spatial_synonym"):
         importing_error_check()
     except:
         print(*importing_error, sep="\n")
-        exit()
+        # exit()
 
     list_sne = find_sne(text)
     list_geonlplify_variant = spatial_varations(list_sne, method)
