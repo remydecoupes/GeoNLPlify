@@ -84,6 +84,7 @@ You can install GeoNLPlify in three ways: in a [virtual_env](#virtual-environmen
 + [Simplemaps data](https://simplemaps.com/data/world-cities)
 
 ## Scientific publication
-| Conference   |      paper      |  description |
+| Conference / journal   |      paper      |  description |
 |----------|:-------------:|------:|
 | [EGC'2023](https://egc2023.sciencesconf.org/) |  [short paper (in French)](https://editions-rnti.fr/?inprocid=1002848) | [video](https://youtu.be/-QaTBtjWr9g) |
+| [Iospress - Intelligent Data Analysis](https://content.iospress.com/journals/intelligent-data-analysis) | [long paper (in English)](https://www.doi.org/10.3233/IDA-230040) | Open Access |
