@@ -1,5 +1,5 @@
 <h1 align="center"> GeoNLPlify
-:earth_africa: :book:
+🌍 📖
 </h1>
 
 [![Documentation Status](https://readthedocs.org/projects/geonlplify/badge/?version=latest)](https://geonlplify.readthedocs.io/en/latest/?badge=latest)
